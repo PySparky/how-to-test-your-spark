@@ -2,8 +2,8 @@ from unittest.mock import MagicMock
 from pyspark.sql import SparkSession
 from unittest.mock import patch
 
-def spark_read_table(spark_):
-    return spark_.read.table("hello").select(
+def spark_read_table(spark):
+    return spark.read.table("hello").select(
         "column1"
     )
 
